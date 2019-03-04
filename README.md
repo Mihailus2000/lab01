@@ -48,9 +48,10 @@ $ echo ${PATH}                                        # Вывод на экра
 /usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 $ export PATH=${PATH}:`pwd`/node/bin                  # Добавление в PATH папку с программой node js
 $ echo ${PATH}                                        # Вывод на экран переменной PATH
-/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/mihail/Mihailus2000/workspace/node/bin
-$ mkdir scripts                                       # Создание папки /Mihailus2000/workspace/scripts
-$ cat > scripts/activate<<EOF                         # Запись строки в файл /Mihailus2000/workspace/scripts/activate
+/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:
+/home/mihail/Mihailus2000/workspace/node/bin
+$ mkdir scripts                       # Создание папки /Mihailus2000/workspace/scripts
+$ cat > scripts/activate<<EOF         # Запись строки в файл /Mihailus2000/workspace/scripts/activate
 export PATH=\${PATH}:`pwd`/node/bin
 EOF
 $ source scripts/activate                             # Выполнение скрипта
